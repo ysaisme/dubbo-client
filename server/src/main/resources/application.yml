@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: dubbo-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  resources:
+    static-locations: classpath:/static/
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: spring-cloud://localhost
+  scan:
+    base-packages: com.ysa.apiService
+  cloud:
+    subscribed-services: dubbo-server
+server:
+  port: 9400
