@@ -17,5 +17,7 @@ dubbo:
     base-packages: com.ysa.apiService
   cloud:
     subscribed-services: dubbo-server
+  consumer:
+    timeout: 300000
 server:
   port: 9400
