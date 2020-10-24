@@ -4,5 +4,6 @@
 
 # IntelliJ project files
 .idea/
-rpc-dubbo-api/target/
+rpc-client-api/target/
 server/target/
+.iml
