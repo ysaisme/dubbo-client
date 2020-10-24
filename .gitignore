@@ -6,4 +6,4 @@
 .idea/
 rpc-client-api/target/
 server/target/
-.iml
+*.iml
