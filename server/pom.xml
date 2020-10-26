@@ -63,14 +63,12 @@
             <version>${rpc-client-api.version}</version>
             <scope>compile</scope>
         </dependency>
-
         <dependency>
             <groupId>com.ysa</groupId>
             <artifactId>rpc-dubbo-api</artifactId>
-            <version>0.0.2</version>
+            <version>0.0.4</version>
         </dependency>
     </dependencies>
-
 
     <dependencyManagement>
         <dependencies>
@@ -90,21 +88,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <repositories>
-        <repository>
-            <id>nexus</id>
-            <name>Repository</name>
-            <url>http://localhost:9301/nexus/content/groups/public/</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>aliyun-repos</id>
-            <name>Aliyun Repository</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <build>
         <plugins>
