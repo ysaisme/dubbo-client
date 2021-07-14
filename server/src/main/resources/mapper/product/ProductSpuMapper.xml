@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ysa.model.mapper.product.ProductSpuMapper">
+  <resultMap id="BaseResultMap" type="com.ysa.model.entity.product.ProductSpuDO">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="spu" jdbcType="VARCHAR" property="spu" />
+    <result column="brand" jdbcType="VARCHAR" property="brand" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="suggest_price" jdbcType="DECIMAL" property="suggestPrice" />
+    <result column="member_price" jdbcType="DECIMAL" property="memberPrice" />
+    <result column="qty" jdbcType="INTEGER" property="qty" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_at" jdbcType="INTEGER" property="createAt" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_at" jdbcType="INTEGER" property="updateAt" />
+    <result column="remove_flag" jdbcType="BIT" property="removeFlag" />
+  </resultMap>
+</mapper>

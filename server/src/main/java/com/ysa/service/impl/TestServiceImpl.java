@@ -22,7 +22,6 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public String hello() {
-
         String result = helloService.hello("hello dubbo");
         log.info("-> 打印一下: {}", result);
         return result;

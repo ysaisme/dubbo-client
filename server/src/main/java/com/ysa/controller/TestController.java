@@ -1,6 +1,8 @@
 package com.ysa.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.ysa.service.TestService;
+import com.ysa.util.BaseResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,7 +24,8 @@ public class TestController {
     private TestService testService;
 
     @GetMapping("/hello")
-    public String getHandbookConfigList() {
-        return testService.hello();
+    @SentinelResource(value = "hello", blockHandler = "exceptionHandler", fallback = "helloFallback")
+    public BaseResult getHello() {
+        return BaseResult.success(testService.hello());
     }
 }

@@ -18,6 +18,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public String getInfo() {
         log.info("-> 这里是用户为服务");
-        return "this is userService";
+        return "this is userService ~~~~~~";
     }
 }
