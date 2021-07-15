@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <rpc-client-api.version>0.0.1</rpc-client-api.version>
+        <rpc-client-api.version>0.0.5</rpc-client-api.version>
     </properties>
 
 
